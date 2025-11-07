@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robot 2 GDL</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Robot Planar 2 Grados De Libertad</h1>
+  <canvas id="canvas" width="500" height="500"></canvas>
+  <div class="controls">
+    <label>Xd [cm]: <input id="xd" type="number" value="10"></label>
+    <label>Yd [cm]: <input id="yd" type="number" value="10"></label>
+    <button id="moveBtn">Mover instantáneo</button>
+    <button id="trajBtn">Generar trayectoria</button>
+    <button id="homeBtn">Posición inicial</button>
+  </div>
+  <div id="plots">
+    <canvas id="qPlot"></canvas>
+  </div>
+
+  <script src="robotPlanar.js"></script>
+</body>
+</html>
